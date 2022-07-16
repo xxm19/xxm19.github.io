@@ -5,7 +5,7 @@ const Job = ({ data }) => (
   <article className="jobs-container">
     <header>
       <h4>{data.title} - {data.place}</h4>
-      <p className='position'> {data.position}, {data.daterange}</p>
+      <p className="position"> {data.position}, {data.daterange}</p>
     </header>
     <ul className="points">
       {data.points.map((point) => (

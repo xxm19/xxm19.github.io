@@ -5,8 +5,7 @@ const positions = [
     position: 'Research Intern',
     daterange: '06/2022-Present',
     points: [
-      'Summer research intern at Stanford University.', 
-      'I am advised by Prof. Leo Guibas.',
+      'Summer research intern advised by Prof. Leo Guibas.',
     ],
   },
   {
@@ -15,8 +14,7 @@ const positions = [
     position: 'Research Assistant',
     daterange: '06/2021-Present',
     points: [
-      'Exploring 3D vision and robotics.', 
-      'I am advised by Prof. Li Yi.',
+      'Exploring 3D vision and robotics advised by Prof. Li Yi.',
     ],
   },
   {

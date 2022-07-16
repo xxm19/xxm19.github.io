@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const Course = ({ data, last }) => (
   <li className="course-container">
-      <h4 className="course-number">{data.title}:</h4>
-      <p className="course-name">{data.GPA}</p>
+    <h4 className="course-number">{data.title}:</h4>
+    <p className="course-name">{data.GPA}</p>
     {!last && <div className="course-dot"><p className="course-name"> &#8226;</p></div>}
   </li>
 );
