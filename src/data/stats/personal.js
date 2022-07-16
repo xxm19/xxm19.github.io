@@ -1,40 +1,22 @@
 import React, { useState, useEffect } from 'react';
 
-const Age = () => {
-  const [age, setAge] = useState();
-
-  const tick = () => {
-    const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
-    const birthTime = new Date('1990-02-05T09:24:00');
-    setAge(((Date.now() - birthTime) / divisor).toFixed(11));
-  };
-
-  useEffect(() => {
-    const timer = setInterval(() => tick(), 25);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-  return <>{age}</>;
-};
-
 const data = [
   {
     key: 'age',
-    label: 'Current age',
-    value: <Age />,
+    label: 'Leveraging Geometric and Kinematic Cues for Visual-Tactile Category-Level In-Hand Pose Tracking, submitted to CoRL 2022.',
+    value: 'Xiaomeng Xu*, Yun Liu*, Weihang Chen, Haocheng Yuan, He Wang, Jing Xu, Rui Chen, Li Yi',
   },
   {
     key: 'countries',
-    label: 'Countries visited',
-    value: 53,
+    label: 'AutoGPart: Intermediate Supervision Search for Generalizable 3D Part Segmentation, CVPR 2022.',
+    value: 'Xueyi Liu, Xiaomeng Xu, Anyi Rao, Chuang Gan, Li Yi',
     link:
-      'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
+      'https://arxiv.org/abs/2203.06558',
   },
   {
     key: 'location',
-    label: 'Current city',
-    value: 'New York, NY',
+    label: 'ViviPaint: Creating Dynamic Painting with a Thermochromic Toolkit, submitted to Chinese CHI 2022.',
+    value: 'Guanhong Liu, Tianyu Yu, Zhihao Yao, Haiqing Xu, Yunyi Zhang, Xuhai Xu, Xiaomeng Xu, Mingyue Gao, Qirui Sun, Tingliang Zhang, Haipeng Mi',
   },
 ];
 

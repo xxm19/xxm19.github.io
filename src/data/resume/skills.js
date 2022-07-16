@@ -3,133 +3,38 @@
 
 const skills = [
   {
-    title: 'Javascript',
-    competency: 4,
-    category: ['Web Development', 'Languages', 'Javascript'],
-  },
-  {
-    title: 'Node.JS',
-    competency: 3,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'React',
-    competency: 3,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'Bash',
-    competency: 2,
-    category: ['Tools', 'Languages'],
-  },
-  {
-    title: 'Amazon Web Services',
-    competency: 4,
-    category: ['Web Development', 'Tools'],
-  },
-  {
-    title: 'Heroku',
-    competency: 2,
-    category: ['Web Development', 'Tools'],
-  },
-  {
-    title: 'MongoDB',
-    competency: 3,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'ElasticSearch',
-    competency: 2,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'PostgreSQL/SQLite3/SQL',
-    competency: 4,
-    category: ['Web Development', 'Databases', 'Languages'],
-  },
-  {
-    title: 'Redis',
-    competency: 3,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'Data Mining',
-    competency: 3,
-    category: ['Data Science'],
-  },
-  {
-    title: 'Express.JS',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'D3',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'Flask',
-    competency: 2,
-    category: ['Web Development', 'Python'],
-  },
-  {
-    title: 'Git/Mercurial',
-    competency: 3,
+    title: 'Git',
+    competency: 5,
     category: ['Tools'],
   },
   {
-    title: 'Kubernetes',
-    competency: 2,
-    category: ['Tools', 'Data Engineering'],
+    title: 'Pytorch',
+    competency: 5,
+    category: ['Tools'],
   },
   {
-    title: 'Google Cloud Compute',
-    competency: 2,
-    category: ['Tools', 'Web Development'],
+    title: 'Latex',
+    competency: 5,
+    category: ['Tools'],
   },
   {
-    title: 'Numpy',
-    competency: 3,
-    category: ['Data Science', 'Data Engineering', 'Python'],
-  },
-  {
-    title: 'Numba',
-    competency: 2,
-    category: ['Data Science', 'Data Engineering', 'Python'],
-  },
-  {
-    title: 'Tensorflow + Keras',
-    competency: 3,
-    category: ['Data Science', 'Python'],
-  },
-  {
-    title: 'Jupyter',
-    competency: 3,
-    category: ['Data Science', 'Python'],
-  },
-  {
-    title: 'Typescript',
-    competency: 2,
-    category: ['Web Development', 'Languages', 'Javascript'],
-  },
-  {
-    title: 'HTML + SASS/SCSS/CSS',
-    competency: 3,
-    category: ['Web Development', 'Languages'],
+    title: 'Markdown',
+    competency: 5,
+    category: ['Tools'],
   },
   {
     title: 'Python',
     competency: 5,
-    category: ['Languages', 'Python'],
-  },
-  {
-    title: 'C++',
-    competency: 2,
     category: ['Languages'],
   },
   {
-    title: 'Julia',
-    competency: 2,
+    title: 'OpenCV',
+    competency: 5,
+    category: ['Tools'],
+  },
+  {
+    title: 'C/C++',
+    competency: 4,
     category: ['Languages'],
   },
   {
@@ -138,60 +43,56 @@ const skills = [
     category: ['Languages'],
   },
   {
-    title: 'R',
+    title: 'Verilog/VHDL',
     competency: 2,
     category: ['Languages'],
   },
   {
-    title: 'Data Visualization',
-    competency: 3,
-    category: ['Data Science', 'Javascript'],
-  },
-  {
-    title: 'GraphQL',
+    title: 'ROS',
     competency: 2,
-    category: ['Web Development', 'Databases'],
+    category: ['Languages'],
   },
   {
-    title: 'Pandas',
+    title: 'SolidWorks',
     competency: 5,
-    category: ['Data Engineering', 'Data Science', 'Python'],
+    category: ['Softwares'],
   },
   {
-    title: 'Matplotlib',
+    title: 'AutoCAD',
     competency: 3,
-    category: ['Data Engineering', 'Data Science', 'Python'],
+    category: ['Softwares'],
   },
   {
-    title: 'Scikit-Learn',
+    title: 'Qt Creator',
     competency: 4,
-    category: ['Data Engineering', 'Data Science', 'Python'],
+    category: ['Softwares'],
   },
   {
-    title: 'Hadoop',
+    title: 'Multisim',
+    competency: 5,
+    category: ['Softwares'],
+  },
+  {
+    title: 'Quartus',
     competency: 2,
-    category: ['Data Engineering', 'Data Science'],
+    category: ['Softwares'],
   },
   {
-    title: 'Spark',
+    title: '3D Printing',
+    competency: 5,
+    category: ['Hardwares'],
+  },
+  {
+    title: 'FPGA',
     competency: 2,
-    category: ['Data Engineering', 'Data Science'],
+    category: ['Hardwares'],
   },
   {
-    title: 'Dagster',
+    title: 'Microcontroller',
     competency: 2,
-    category: ['Data Engineering', 'Python'],
+    category: ['Hardwares'],
   },
-  {
-    title: 'Mypy',
-    competency: 3,
-    category: ['Python'],
-  },
-  {
-    title: 'Pylint',
-    competency: 4,
-    category: ['Data Engineering', 'Python'],
-  },
+  
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
 // this is a list of colors that I like. The length should be == to the

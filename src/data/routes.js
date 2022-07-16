@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: "Xiaomeng Xu",
     path: '/',
   },
   {
@@ -13,12 +13,12 @@ const routes = [
     path: '/resume',
   },
   {
-    label: 'Projects',
-    path: '/projects',
+    label: 'Publications',
+    path: '/stats',
   },
   {
-    label: 'Stats',
-    path: '/stats',
+    label: 'Projects',
+    path: '/projects',
   },
   {
     label: 'Contact',

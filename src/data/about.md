@@ -1,7 +1,7 @@
 
 # Intro
 
-I am a third-year undergraduate student at Tsinghua University. My major is Creative Design and Intelligent Engineering, 
+I am a junior undergraduate student at Tsinghua University. My major is Creative Design and Intelligent Engineering, an interdisciplinary major of Automation, Industrial Design, and Mechanical Engineering.
 
 # Currently
 
@@ -17,9 +17,3 @@ I also work with Prof. [Li Yi](https://ericyi.github.io/), focusing on 3D vision
 - Running
 - Hiking
 - Traveling
-
-# I dream of
-
-- always finding inspiration.
-- enabling a brighter future.
-- doing better.

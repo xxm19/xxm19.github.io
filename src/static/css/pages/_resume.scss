@@ -25,6 +25,15 @@
 			margin-bottom: 2em;
 		}
 	}
+
+	.awards {
+
+		.title {
+			text-align: center;
+			margin-bottom: 2em;
+		}
+	}
+
 	.experience {
 		.title {
 			text-align: center;
@@ -95,6 +104,25 @@
 	}
 
 	.school {
+		text-transform: none;
+		padding-top: 0.3em;
+		margin-bottom: 1em;
+	}
+}
+
+.award-container {
+	h4 {
+		font-weight: normal;
+	}
+
+	.name {
+		margin-bottom: .1em;
+		text-transform: none;
+		letter-spacing: 0.16em;
+		font-size: .8em;
+	}
+
+	.describe {
 		text-transform: none;
 		padding-top: 0.3em;
 		margin-bottom: 1em;
