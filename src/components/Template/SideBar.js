@@ -19,8 +19,8 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Xiaomeng.
-        I am a junior undergraduate student at Xinya College, Tsinghua University. My research interests lie in computer vision and robotics.
+      <p>I am a junior undergraduate student at Tsinghua University.
+        My research interests lie in computer vision and robotics.
       </p>
       <ul className="actions">
         <li>
