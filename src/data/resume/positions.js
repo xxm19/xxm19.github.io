@@ -14,7 +14,7 @@ const positions = [
     position: 'Research Assistant',
     daterange: '06/2021-Present',
     points: [
-      'Exploring 3D vision and robotics advised by Prof. Li Yi.',
+      'Exploring 3D vision and robotics research field, advised by Prof. Li Yi.',
     ],
   },
   {
@@ -32,7 +32,7 @@ const positions = [
     position: 'Member',
     daterange: '10/2020-Present',
     points: [
-      'Leadership talents training program, selects 40 students each year (4/3000).',
+      'Leadership talents training program.',
     ],
   },
   {

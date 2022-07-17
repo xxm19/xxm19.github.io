@@ -6,7 +6,7 @@ const data = [
     image: '/images/projects/illu3.png',
     date: '12/2021-06/2022',
     desc:
-      'Utilize tactile sensors to improve the performance of category-level in-hand pose tracking.',
+      'Proposed a category-level in-hand pose tracking framework leveraging geometric and kinematic cues from visual-tactile sensing.',
   },
   {
     title: 'Generalizable 3D Part Segmentation',
