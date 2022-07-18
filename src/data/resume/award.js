@@ -6,7 +6,7 @@ const award = [
   },
   {
     title: '129 Scholarship',
-    note: 'Highest scholarship for juniors in Tsinghua, 0.1%',
+    note: 'Highest scholarship for sophomores in Tsinghua, 0.1%',
     year: '2020',
   },
   {
