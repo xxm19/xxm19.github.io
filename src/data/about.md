@@ -13,6 +13,12 @@ I also work with Prof. [Li Yi](https://ericyi.github.io/), focusing on 3D vision
 # I like
 
 - Painting
+
+<details>
+<summary>See some of my pieces!</summary>
+<img src='public/images/paintings/pic1.jpg'/>
+</details>
+
 - Reading
 - Running
 - Hiking
