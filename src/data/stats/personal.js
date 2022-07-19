@@ -15,7 +15,7 @@ const data = [
   },
   {
     key: 'location',
-    label: 'ViviPaint: Creating Dynamic Painting with a Thermochromic Toolkit, submitted to Chinese CHI 2022.',
+    label: 'ViviPaint: Creating Dynamic Painting with a Thermochromic Toolkit, Chinese CHI 2022.',
     value: 'Guanhong Liu, Tianyu Yu, Zhihao Yao, Haiqing Xu, Yunyi Zhang, Xuhai Xu, Xiaomeng Xu, Mingyue Gao, Qirui Sun, Tingliang Zhang, Haipeng Mi',
   },
 ];
