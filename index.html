@@ -84,7 +84,7 @@
                 <li> <b>Sep 2024</b> <a href="https://dgdm-robot.github.io">Dynamics-Guided Diffusion Model</a> is accepted to CoRL 2024. 🎉</li>
                 <li> <b>Sep 2023</b> Started PhD at Stanford University. 🌲</li>
                 <li> <b>Jun 2023</b> Graduated from Tsinghua University with the highest honor. 🎓</li>
-                <li> <b>Jun 2022</b> Research intern at Stanford through the <a href="https://engineering.stanford.edu/students-academics/programs/global-engineering-programs/chinese-ugvr">UGVR program</a> advised by Prof. <a href="http://geometry.stanford.edu/member/guibas/index.html">Leonidas J. Guibas.</li>
+                <li> <b>Jun 2022</b> Research intern at Stanford through the <a href="https://engineering.stanford.edu/students-academics/programs/global-engineering-programs/chinese-ugvr">UGVR program</a> advised by Prof. <a href="http://geometry.stanford.edu/member/guibas/index.html">Leonidas J. Guibas.</a></li>
             </ul>
             <p></p>
             <div style="clear: both;"></div>
@@ -92,7 +92,13 @@
         <div class="divider"></div>
         <div style="display:flex;flex-direction: column;" id="research">
             <h1>Research</h1>
-            <div>
+            <div class="pub-toggle">
+                <button data-view="selected">Selected</button>
+                <button data-view="date" class="active">All by date</button>
+                <button data-view="topic">All by topic</button>
+            </div>
+            <div class="topic-tabs" id="topic-tabs"></div>
+            <div class="pub" data-topics="manipulation human sensing" data-selected="true">
                 <a href="https://hommi-robot.github.io/" style="height: 12em;" class="research-thumb">
                     <img src="figs/hommi_teaser.gif" alt="HoMMI" style="width: 100%; height: auto;">
                 </a>
@@ -121,7 +127,7 @@
             </div>
 
             <!-- EgoVerse -->
-            <div>
+            <div class="pub" data-topics="human" data-selected="false">
                 <a href="https://egoverse.ai/" style="height: 12em;" class="research-thumb">
                     <img src="figs/DatasetOverview.mp4" alt="EgoVerse" style="width: 100%; height: auto;">
                 </a>
@@ -140,7 +146,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="pub" data-topics="contact human" data-selected="false">
                 <a href="https://umi-ft.github.io/" style="height: 12em;" class="research-thumb">
                     <img src="figs/umift.gif" alt="UMI-FT" style="width: 100%; height: auto;">
                 </a>
@@ -166,7 +172,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="pub" data-topics="contact" data-selected="true">
                 <a href="https://compliant-residual-dagger.github.io/" style="height: 12em;" class="research-thumb">
                     <img src="figs/cr-dagger.jpg" alt="CR-DAgger" style="width: 100%; height: auto;">
                 </a>
@@ -191,7 +197,7 @@
                     <b>TL;DR</b>: Improving contact-rich manipulation with a compliant residual policy learned from on-policy delta human correction.
                 </p>
             </div>
-            <div>
+            <div class="pub" data-topics="sensing human" data-selected="false">
                 <a href="https://vision-in-action.github.io/" style="height: 12em;" class="research-thumb">
                     <img src="figs/via_teaser.gif" alt="ViA Teaser" style="width: 100%; height: auto;">
                 </a>
@@ -218,7 +224,7 @@
                 </p>
             </div>        
 
-            <div>
+            <div class="pub" data-topics="manipulation sensing codesign" data-selected="true">
                 <a href="https://robopanoptes.github.io/" style="height: 12em;" class="research-thumb">
                     <video id="teaser-panoptes" autoplay muted loop playsinline preload="auto" width="100%">
                         <source src="figs/panoptes.mp4"
@@ -243,7 +249,7 @@
                     <b>TL;DR</b>: A robot that utilizes all of its body parts to sense and interact with the environment.
                 </p>
             </div>
-            <div>
+            <div class="pub" data-topics="codesign" data-selected="true">
                 <a href="https://dgdm-robot.github.io" style="height: 12em;" class="research-thumb">
                     <video id="teaser-dgdm" autoplay muted loop playsinline preload="auto" width="100%">
                         <source src="figs/dgdm.mp4"
@@ -271,7 +277,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="pub" data-topics="vision" data-selected="true">
                 <a href="https://xxm19.github.io/jnerf/" style="height: 12em;" class="research-thumb">
                     <video id="teaser-jnerf" autoplay muted loop playsinline preload="auto" width="100%">
                         <source src="figs/jnerf.mp4"
@@ -300,7 +306,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="pub" data-topics="vision contact" data-selected="true">
                 <a href="https://arxiv.org/abs/2210.04026" style="height: 12em;" class="research-thumb">
                     <video id="teaser-tegtrack" autoplay muted loop playsinline preload="auto" width="100%">
                         <source src="figs/tegtrack.mp4"
@@ -328,7 +334,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="pub" data-topics="vision" data-selected="false">
                 <a href="https://autogpart.github.io/" style="height: 12em;" class="research-thumb">      
                     <video id="teaser-autogpart" autoplay muted loop playsinline preload="auto" width="100%">
                         <source src="figs/autogpart.mp4"
@@ -356,7 +362,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="pub" data-topics="codesign" data-selected="false">
                 <a href="https://www.liuguanhong.com/blog/vivipaint" style="height: 12em;" class="research-thumb"><iframe title='VideoPress Video Player' aria-label='VideoPress Video Player' width='500' height='281' src='https://video.wordpress.com/embed/NRFOiBdC?cover=1&amp;autoPlay=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;persistVolume=0&amp;playsinline=1&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0' frameborder='0' allowfullscreen data-resize-to-parent="true"  allow='clipboard-write' ></iframe><script src='https://v0.wordpress.com/js/next/videopress-iframe.js?m=1674852142'></script>
                 </a>
                 <a href="https://www.liuguanhong.com/blog/vivipaint" class="research-proj-title">
@@ -452,6 +458,71 @@
     document.querySelectorAll('video[autoplay]').forEach(function(v) {
         observer.observe(v);
     });
+</script>
+<script>
+    // Publication views: Selected / All by date / All by topic.
+    // "All by topic" reveals a second row of topic tabs; selecting one filters the
+    // list to papers tagged with that topic (data-topics, space-separated). Each
+    // paper is shown once, in date order.
+    (function() {
+        var groups = [
+            { key: 'manipulation', label: 'Whole-Body & Mobile Manipulation' },
+            { key: 'sensing',      label: 'Active & Whole-Body Sensing' },
+            { key: 'codesign',     label: 'Hardware-Software Co-Design' },
+            { key: 'contact',      label: 'Tactile Sensing & Contact-Rich Manipulation' },
+            { key: 'human',        label: 'Learning from Human Data' },
+            { key: 'vision',       label: '3D Vision & Perception' }
+        ];
+        var buttons = document.querySelectorAll('.pub-toggle button');
+        var items = Array.prototype.slice.call(document.querySelectorAll('#research .pub'));
+        var topicTabs = document.getElementById('topic-tabs');
+        var currentTopic = groups[0].key;
+
+        function topicsOf(el) {
+            return (el.dataset.topics || '').split(/\s+/).filter(Boolean);
+        }
+
+        // Build the topic tab buttons once.
+        groups.forEach(function(g) {
+            var b = document.createElement('button');
+            b.textContent = g.label;
+            b.dataset.topic = g.key;
+            b.addEventListener('click', function() {
+                currentTopic = g.key;
+                renderTopic();
+            });
+            topicTabs.appendChild(b);
+        });
+
+        function renderTopic() {
+            topicTabs.querySelectorAll('button').forEach(function(b) {
+                b.classList.toggle('active', b.dataset.topic === currentTopic);
+            });
+            items.forEach(function(it) {
+                it.style.display = topicsOf(it).indexOf(currentTopic) !== -1 ? '' : 'none';
+            });
+        }
+
+        function setView(view) {
+            buttons.forEach(function(b) {
+                b.classList.toggle('active', b.dataset.view === view);
+            });
+            if (view === 'topic') {
+                topicTabs.style.display = 'flex';
+                renderTopic();
+            } else {
+                topicTabs.style.display = 'none';
+                items.forEach(function(it) {
+                    it.style.display = (view === 'selected' && it.dataset.selected !== 'true') ? 'none' : '';
+                });
+            }
+        }
+
+        buttons.forEach(function(b) {
+            b.addEventListener('click', function() { setView(b.dataset.view); });
+        });
+        setView('date');
+    })();
 </script>
 </body>
 

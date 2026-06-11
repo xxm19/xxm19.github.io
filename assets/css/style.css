@@ -145,3 +145,74 @@ strong {
     color: var(--blue1);
     font-weight: 400;
 }
+
+/**************************************************/
+
+.pub-toggle {
+    display: inline-flex;
+    align-self: flex-start;
+    gap: 4px;
+    margin: 6px 0 26px 0;
+    padding: 3px;
+    background-color: #f5f7fa;
+    border-radius: 24px;
+}
+
+.pub-toggle button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.92em;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: var(--grey);
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 20px;
+    cursor: pointer;
+    transition: color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pub-toggle button:hover {
+    color: var(--blue3);
+}
+
+.pub-toggle button.active {
+    color: var(--blue2);
+    font-weight: 600;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 51, 160, 0.12);
+}
+
+.topic-tabs {
+    display: none; /* shown (flex) only in the "All by topic" view */
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: -8px 0 24px 0;
+    padding-top: 14px;
+    border-top: 1px solid #eee;
+}
+
+.topic-tabs button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.85em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--grey);
+    background-color: #f4f6f9;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    padding: 4px 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.topic-tabs button:hover {
+    color: var(--blue3);
+}
+
+.topic-tabs button.active {
+    color: var(--blue2);
+    background-color: #e3edf8;
+    border-color: var(--blue4);
+    font-weight: 600;
+}
