@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout *)",
+      "Bash(command -v node)",
+      "Bash(node -e \"console.log\\(require\\('playwright'\\)?'playwright-yes':''\\)\")",
+      "Bash(open index.html)"
+    ]
+  }
+}

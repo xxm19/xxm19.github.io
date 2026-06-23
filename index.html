@@ -80,8 +80,7 @@
                 <li> <b>Jun 2025</b> Research intern at <a href="https://www.tri.global/our-work/large-behavior-models">TRI LBM</a> team in Cambridge, MA.</li>
                 <li> <b>May 2025</b> Grateful to be awarded the <a href="https://woods.stanford.edu/educating-leaders/education-leadership-programs/stanford-interdisciplinary-graduate-fellowships">Stanford Interdisciplinary Graduate Fellowship</a>.</li>
                 <li> <b>Apr 2025</b> <a href="https://robopanoptes.github.io/">RoboPanoptes</a> is accepted to RSS 2025, see you in LA! 🐍</li>
-                <li> <b>Nov 2024</b> <a href="https://dgdm-robot.github.io">Dynamics-Guided Diffusion Model</a> won Best Machine Learning Paper at the <a href="https://sites.google.com/view/corl-mapodel-workshop">MAPoDeL Workshop @ CoRL 2024</a>!</li>
-                <li> <b>Sep 2024</b> <a href="https://dgdm-robot.github.io">Dynamics-Guided Diffusion Model</a> is accepted to CoRL 2024. 🎉</li>
+                <li> <b>Nov 2024</b> <a href="https://dgdm-robot.github.io">Dynamics-Guided Diffusion Model</a> is accepted to CoRL 2024 and won Best Machine Learning Paper at the <a href="https://sites.google.com/view/corl-mapodel-workshop">MAPoDeL Workshop @ CoRL 2024</a>! 🎉</li>
                 <li> <b>Sep 2023</b> Started PhD at Stanford University. 🌲</li>
                 <li> <b>Jun 2023</b> Graduated from Tsinghua University with the highest honor. 🎓</li>
                 <li> <b>Jun 2022</b> Research intern at Stanford through the <a href="https://engineering.stanford.edu/students-academics/programs/global-engineering-programs/chinese-ugvr">UGVR program</a> advised by Prof. <a href="http://geometry.stanford.edu/member/guibas/index.html">Leonidas J. Guibas.</a></li>
@@ -98,10 +97,45 @@
                 <button data-view="topic">All by topic</button>
             </div>
             <div class="topic-tabs" id="topic-tabs"></div>
+
+            <div class="pub" data-topics="manipulation sensing" data-selected="true">
+                <a href="https://panovine-bot.github.io/" style="height: 12em;" class="research-thumb">
+                    <video id="teaser-panovine" autoplay muted loop playsinline preload="auto" width="100%">
+                        <source src="figs/panovine.mp4"
+                                type="video/mp4">
+                    </video>
+                </a>
+                <div class="pub-info">
+                <a href="https://panovine-bot.github.io/" class="research-proj-title">
+                    PanoVine: Whole-Body Visuomotor Control for Soft Growing Vine Robot
+                </a>
+                <p>
+                    <a style="color:#000;" href="https://scholar.google.com/citations?user=KCkNCOYAAAAJ&hl=en">Yimeng Qin*</a>,
+                    <b>Xiaomeng Xu*</b>,
+                    William Heap,
+                    Aditi Oak,
+                    <a style="color:#000;" href="https://shurans.github.io/">Shuran Song&dagger;</a>,
+                    <a style="color:#000;" href="http://charm.stanford.edu/Main/AllisonOkamura">Allison Okamura&dagger;</a>
+                    <br>arXiv preprint, 2026
+                    <br>
+                    <a href="https://panovine-bot.github.io/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://arxiv.org/abs/2606.22923">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://github.com/xxm19/panovine">Code</a>
+                </p>
+                <br>
+                <p>
+                    <b>TL;DR</b>: Vine robots are soft, growing robots well suited to confined spaces. PanoVine is the first autonomous vine robot system, using rich whole-body vision feedback from 19 cameras distributed along its body to train an end-to-end visuomotor policy.
+                </p>
+                </div>
+            </div>
+
             <div class="pub" data-topics="manipulation human sensing" data-selected="true">
                 <a href="https://hommi-robot.github.io/" style="height: 12em;" class="research-thumb">
-                    <img src="figs/hommi_teaser.gif" alt="HoMMI" style="width: 100%; height: auto;">
+                    <video id="teaser-hommi" autoplay muted loop playsinline preload="auto" width="100%">
+                        <source src="figs/hommi_teaser.mp4" type="video/mp4">
+                    </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://hommi-robot.github.io/" class="research-proj-title">HoMMI: Learning Whole-Body Mobile Manipulation from Human Demonstrations</a>
                 <p>
                     <b>Xiaomeng Xu</b>,
@@ -114,7 +148,8 @@
                     <a style="color:#000;" href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>,
                     <a style="color:#000;" href="https://shurans.github.io/">Shuran Song</a>
                     <br>
-                    Robotics: Science and Systems (RSS 2026)<br>
+                    Robotics: Science and Systems (RSS 2026)
+                    <br><a style="color:#000;" href="https://embodied-ai.org/cvpr2026/">Embodied AI Workshop (CVPR 2026)</a>, Oral Presentation<br>
                     <a href="https://hommi-robot.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                     <a href="https://arxiv.org/abs/2603.03243">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                     <a href="https://youtu.be/0rPr9DbPfuo?si=mssJLSQCmZ-V3hzW">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
@@ -122,15 +157,19 @@
                 </p>
                 <br>
                 <p>
-                    <b>TL;DR</b>: A data collection and policy learning framework that learns whole-body mobile manipulation directly from robot-free human demonstrations (Egocentric+UMI).
+                    <b>TL;DR</b>: A data collection and policy learning framework that learns whole-body mobile manipulation and active perception directly from robot-free human demonstrations (Egocentric+UMI), without any teleoperation data.
                 </p>
+                </div>
             </div>
 
             <!-- EgoVerse -->
             <div class="pub" data-topics="human" data-selected="false">
                 <a href="https://egoverse.ai/" style="height: 12em;" class="research-thumb">
-                    <img src="figs/DatasetOverview.mp4" alt="EgoVerse" style="width: 100%; height: auto;">
+                    <video id="teaser-egoverse" autoplay muted loop playsinline preload="auto" width="100%">
+                        <source src="figs/DatasetOverview.mp4" type="video/mp4">
+                    </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://egoverse.ai/" class="research-proj-title">EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World</a>
                 <p>
                     Ryan Punamiya et al.
@@ -144,12 +183,16 @@
                 <p>
                     <b>TL;DR</b>: An ecosystem for curating, accessing, and learning from human data for robot learning.
                 </p>
+                </div>
             </div>
 
             <div class="pub" data-topics="contact human" data-selected="false">
                 <a href="https://umi-ft.github.io/" style="height: 12em;" class="research-thumb">
-                    <img src="figs/umift.gif" alt="UMI-FT" style="width: 100%; height: auto;">
+                    <video id="teaser-umift" autoplay muted loop playsinline preload="auto" width="100%">
+                        <source src="figs/umift.mp4" type="video/mp4">
+                    </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://umi-ft.github.io/" class="research-proj-title">In-the-Wild Compliant Manipulation with UMI-FT </a>
                 <p> 
                     <a style="color:#000;" href="http://www.hojungchoi.com/">Hojung Choi*</a>, 
@@ -170,12 +213,14 @@
                 <p>
                     <b>TL;DR</b>: A handheld data-collection platform that integrates compact, finger-level force/torque sensors with multimodal vision data to facilitate force-aware policy learning.
                 </p>
+                </div>
             </div>
 
             <div class="pub" data-topics="contact" data-selected="true">
                 <a href="https://compliant-residual-dagger.github.io/" style="height: 12em;" class="research-thumb">
                     <img src="figs/cr-dagger.jpg" alt="CR-DAgger" style="width: 100%; height: auto;">
                 </a>
+                <div class="pub-info">
                 <a href="https://compliant-residual-dagger.github.io/" class="research-proj-title">
                     Compliant Residual DAgger: Improving Real-World Contact-Rich Manipulation with Human Corrections
                 </a>
@@ -194,13 +239,17 @@
                 </p>
                 <br>
                 <p>
-                    <b>TL;DR</b>: Improving contact-rich manipulation with a compliant residual policy learned from on-policy delta human correction.
+                    <b>TL;DR</b>: A compliant intervention interface lets humans give gentle delta corrections without interrupting policy execution, and a compliant residual policy learns from them with force feedback, improving precise contact-rich manipulation from minimal correction data.
                 </p>
+                </div>
             </div>
             <div class="pub" data-topics="sensing human" data-selected="false">
                 <a href="https://vision-in-action.github.io/" style="height: 12em;" class="research-thumb">
-                    <img src="figs/via_teaser.gif" alt="ViA Teaser" style="width: 100%; height: auto;">
+                    <video id="teaser-via" autoplay muted loop playsinline preload="auto" width="100%">
+                        <source src="figs/via_teaser.mp4" type="video/mp4">
+                    </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://vision-in-action.github.io/" class="research-proj-title">
                     Vision in Action: Learning Active Perception from Human Demonstrations
                 </a>
@@ -222,6 +271,7 @@
                 <p>
                     <b>TL;DR</b>: Learning where to look with a robot neck for bimanual manipulation.
                 </p>
+                </div>
             </div>        
 
             <div class="pub" data-topics="manipulation sensing codesign" data-selected="true">
@@ -231,6 +281,7 @@
                                 type="video/mp4">
                     </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://robopanoptes.github.io/" class="research-proj-title">
                     RoboPanoptes: The All-Seeing Robot with Whole-body Dexterity
                 </a>
@@ -246,8 +297,9 @@
                 </p>
                 <br>
                 <p>
-                    <b>TL;DR</b>: A robot that utilizes all of its body parts to sense and interact with the environment.
+                    <b>TL;DR</b>: A robot that utilizes all of its body parts to sense and interact with the environment. It has 21 cameras distributed along its body and a 9-DoF modular design, together enabling whole-body vision and whole-body dexterity.
                 </p>
+                </div>
             </div>
             <div class="pub" data-topics="codesign" data-selected="true">
                 <a href="https://dgdm-robot.github.io" style="height: 12em;" class="research-thumb">
@@ -256,6 +308,7 @@
                                 type="video/mp4">
                     </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://dgdm-robot.github.io" class="research-proj-title">
                     Dynamics-Guided Diffusion Model for Sensor-less Robot Manipulator Design
                 </a>
@@ -273,8 +326,9 @@
                 </p>
                 <br>
                 <p>
-                    <b>TL;DR</b>: Learning to design task-specific manipulators without task-specific training.
+                    <b>TL;DR</b>: Learning to design task-specific manipulators without task-specific training. A single model generates sensor-less manipulator designs that can blindly manipulate objects towards desired motions and poses, for given object shapes and task specifications.
                 </p>
+                </div>
             </div>
 
             <div class="pub" data-topics="vision" data-selected="true">
@@ -284,6 +338,7 @@
                                 type="video/mp4">
                     </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://xxm19.github.io/jnerf/" class="research-proj-title">
                     JacobiNeRF: NeRF Shaping with Mutual Information Gradients
                 </a>
@@ -302,8 +357,9 @@
                 </p>
                 <br>
                 <p>
-                    <b>TL;DR</b>: Shaping a NeRF to encode mutual correlations in a scene via aligning Jacobians.
+                    <b>TL;DR</b>: Shaping a NeRF to encode mutual correlations in a scene by aligning Jacobians.
                 </p>
+                </div>
             </div>
 
             <div class="pub" data-topics="vision contact" data-selected="true">
@@ -313,6 +369,7 @@
                                 type="video/mp4">
                     </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://arxiv.org/abs/2210.04026" class="research-proj-title">
                     Enhancing Generalizable 6D Pose Tracking of an In-Hand Object with Tactile Sensing
                 </a>
@@ -332,6 +389,7 @@
                 <p>
                     <b>TL;DR</b>: Tactile-enhanced 6D pose tracking of previously unseen in-hand objects.
                 </p>
+                </div>
             </div>
 
             <div class="pub" data-topics="vision" data-selected="false">
@@ -341,6 +399,7 @@
                                 type="video/mp4">
                     </video>
                 </a>
+                <div class="pub-info">
                 <a href="https://autogpart.github.io/" class="research-proj-title">
                     AutoGPart: Intermediate Supervision Search for Generalizable 3D Part Segmentation
                 </a>
@@ -360,11 +419,13 @@
                 <p>
                     <b>TL;DR</b>: Improving the generalizability of 3D part segmentation networks by searching for intermediate supervisions.
                 </p>
+                </div>
             </div>
 
             <div class="pub" data-topics="codesign" data-selected="false">
                 <a href="https://www.liuguanhong.com/blog/vivipaint" style="height: 12em;" class="research-thumb"><iframe title='VideoPress Video Player' aria-label='VideoPress Video Player' width='500' height='281' src='https://video.wordpress.com/embed/NRFOiBdC?cover=1&amp;autoPlay=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;persistVolume=0&amp;playsinline=1&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0' frameborder='0' allowfullscreen data-resize-to-parent="true"  allow='clipboard-write' ></iframe><script src='https://v0.wordpress.com/js/next/videopress-iframe.js?m=1674852142'></script>
                 </a>
+                <div class="pub-info">
                 <a href="https://www.liuguanhong.com/blog/vivipaint" class="research-proj-title">
                     ViviPaint: Creating Dynamic Painting with a Thermochromic Toolkit
                 </a>
@@ -378,13 +439,14 @@
                 <p>
                     <b>TL;DR</b>: A toolkit that assists artists and enthusiasts in creating thermochromic paintings.
                 </p>
+                </div>
             </div>
 
             <div style="clear: both;"></div>
         </div>
         <div>
             <p>
-                * equal contribution.
+                * equal contribution, &dagger; equal advising.
             </p>
         </div>
         <div class="divider"></div>
@@ -499,7 +561,10 @@
                 b.classList.toggle('active', b.dataset.topic === currentTopic);
             });
             items.forEach(function(it) {
-                it.style.display = topicsOf(it).indexOf(currentTopic) !== -1 ? '' : 'none';
+                var match = topicsOf(it).indexOf(currentTopic) !== -1;
+                it.style.display = match ? '' : 'none';
+                // selected papers float to the top of the topic; rest keep date order
+                it.style.order = (match && it.dataset.selected === 'true') ? '0' : '1';
             });
         }
 
@@ -513,6 +578,7 @@
             } else {
                 topicTabs.style.display = 'none';
                 items.forEach(function(it) {
+                    it.style.order = '';
                     it.style.display = (view === 'selected' && it.dataset.selected !== 'true') ? 'none' : '';
                 });
             }

@@ -128,13 +128,34 @@ strong {
     border-bottom: 1px solid #ddd;
 }
 
+.pub {
+    display: flex;
+    align-items: center; /* vertically center text against the thumbnail */
+    margin-bottom: 2em;  /* uniform separation between projects */
+}
+
+.pub-info {
+    flex: 1;
+    min-width: 0;
+}
+
 .research-thumb {
     width: 20em;
     height: 20em;
-    float: left;
+    flex-shrink: 0;
+    float: left; /* used by the Blog thumbnail (non-flex); ignored for flex .pub items */
+    display: flex;
+    align-items: center;      /* center the video/image within the thumbnail box */
+    justify-content: center;
     margin-top: 7px;
     padding-right: 30px;
     margin-bottom: 20px;
+}
+
+.pub .research-thumb {
+    /* symmetric box so the media lines up with the vertically-centered text */
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .research-thumb img {
