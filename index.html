@@ -74,7 +74,7 @@
         </div>
         <div class="section" id="updates">
             <h1>News</h1>
-            <ul>
+            <ul id="news-list">
                 <li> <b>Jun 2026</b> Started research intern at Amazon FAR team in SF, working on humanoid loco-manipulation.</li>
                 <li> <b>Apr 2026</b> <a href="https://hommi-robot.github.io/">HoMMI</a> is accepted to RSS 2026! 🎉</li>
                 <li> <b>Apr 2026</b> We are organizing the <a href="https://rss2026-diffusion-robot-learning.github.io">Diffusion for Robot Learning Workshop @ RSS 2026</a>!</li>
@@ -88,6 +88,8 @@
                 <!-- <li> <b>Jun 2023</b> Graduated from Tsinghua University with the highest honor. 🎓</li> -->
                 <li> <b>Jun 2022</b> Research intern at Stanford through the <a href="https://engineering.stanford.edu/students-academics/programs/global-engineering-programs/chinese-ugvr">UGVR program</a> advised by Prof. <a href="http://geometry.stanford.edu/member/guibas/index.html">Leonidas J. Guibas.</a></li>
             </ul>
+            <div class="show-btn" id="news-more"><a>Show more...</a></div>
+            <div class="show-btn" id="news-less"><a>Show less...</a></div>
             <p></p>
             <div style="clear: both;"></div>
         </div>
@@ -524,13 +526,13 @@
             <ul>
                 <li> Workshop co-organizer:
                     <ul>
-                        <li><a href="https://rss2026-diffusion-robot-learning.github.io">Diffusion for Robot Learning Workshop @ RSS 2026</a></li>
-                        <li><a href="https://rl4il-icra.github.io">Workshop on Reinforcement Learning in the Era of Imitation Learning @ ICRA 2026</a></li>
-                        <li><a href="https://rss-hardware-intelligence.github.io/">RSS 2025 1st Workshop on Robot Hardware-Aware Intelligence</a></li>
+                        <li><a href="https://rss2026-diffusion-robot-learning.github.io">Diffusion for Robot Learning @ RSS 2026</a></li>
+                        <li><a href="https://rl4il-icra.github.io">Reinforcement Learning in the Era of Imitation Learning @ ICRA 2026</a></li>
+                        <li><a href="https://rss-hardware-intelligence.github.io/">Robot Hardware-Aware Intelligence @ RSS 2025</a></li>
                     </ul>
                 </li>
                 <br>
-                <li> Reviewer of RSS 2025, CoRL 2025, T-RO 2025, RA-L 2025-2026, ICRA 2024, IROS 2025, NeurIPS 2024-2026, ICLR 2025-2026, ICML 2025, AAAI 2025 </li>
+                <li> Reviewer of RSS 2025, CoRL 2025-2026, T-RO 2025-2026, RA-L 2025-2026, ICRA 2024, IROS 2025, NeurIPS 2024-2026, ICLR 2025-2026, ICML 2025, AAAI 2025 </li>
                 <br>
                 <li> Teaching assistant of <a href="https://sites.google.com/view/aut24-25-eecs-227/home">EE/CS227: Robot Perception</a> (Fall 2024-2025)</li>
                 <!-- <li> Drop-in tutor for engineering courses at Tsinghua University. -->
@@ -553,6 +555,27 @@
     document.querySelectorAll('video[autoplay]').forEach(function(v) {
         observer.observe(v);
     });
+</script>
+<script>
+    // News list: only the most recent few entries show until "Show more..." is clicked.
+    (function() {
+        var VISIBLE = 5;
+        var items = Array.prototype.slice.call(document.querySelectorAll('#news-list li'));
+        var more = document.getElementById('news-more');
+        var less = document.getElementById('news-less');
+        var hidden = items.slice(VISIBLE);
+        if (!hidden.length) { return; }
+
+        function setExpanded(expanded) {
+            hidden.forEach(function(li) { li.style.display = expanded ? '' : 'none'; });
+            more.style.display = expanded ? 'none' : 'block';
+            less.style.display = expanded ? 'block' : 'none';
+        }
+
+        more.addEventListener('click', function() { setExpanded(true); });
+        less.addEventListener('click', function() { setExpanded(false); });
+        setExpanded(false);
+    })();
 </script>
 <script>
     // Publication views: Selected / All by date / All by topic.

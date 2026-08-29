@@ -169,6 +169,23 @@ strong {
 
 /**************************************************/
 
+.show-btn {
+    margin: 6px 0 0 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.95em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.show-btn a {
+    color: var(--blue3);
+    cursor: pointer;
+}
+
+.show-btn a:hover {
+    border-bottom: 1px solid var(--blue3);
+}
+
 .pub-toggle {
     display: inline-flex;
     align-self: flex-start;
